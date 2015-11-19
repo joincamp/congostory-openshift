@@ -1,0 +1,38 @@
+{{!-- Navigation Page --}}
+<div class="navbar-fixed">
+  <nav class="godo-nav">
+    <div class="full-site-width">
+      {{!-- Add Navigation --}}
+      {{#if @blog.navigation}}{{navigation}}{{/if}}
+      {{!-- Add Logo --}}
+      <a class="logo left" href="{{@blog.url}}">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}"/>{{else}}<span>{{@blog.title}}</span>{{/if}}</a>
+      {{!-- Add Form Search Menu --}}
+      <form class="godo-search">
+        <i class="fa fa-search show-on-medium-screen"></i>
+        <input class="godo-search-field" type="search" placeholder="Search" autocomplete="off">
+        <div class="godo-search-result" id="godo-search-result"></div>
+      </form>
+      {{!-- btn search --}}
+      <a href="#" class="nav-search-open right btn btn-flat"><i class="fa fa-search"></i></a>
+
+      {{!-- Social navigation --}}
+      <div class="nav-social right show-on-medium-screen">
+        <div class="btn btn-flat" style="height:45px">
+          <span><i class="fa fa-facebook"></i></span>
+          <span><i class="fa fa-twitter"></i></span>
+          <span><i class="fa fa-youtube-play"></i></span>
+        </div>
+        {{!-- social Panel --}}
+        <div class="nav-socialPanel">
+          <a href="#" target="_blank"><span class="btn btn-flat bg-facebook"><i class="fa fa-facebook"></i></span>Facebook</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-twitter"><i class="fa fa-twitter"></i></span>twitter</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-youtube"><i class="fa fa-youtube-play"></i></span>youtube</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-linkedin"><i class="fa fa-linkedin"></i></span>linkedin</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-instagram"><i class="fa fa-instagram"></i></span>Instagram</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-behance"><i class="fa fa-flickr"></i></span>flickr</a>
+          <a href="#" target="_blank"><span class="btn btn-flat bg-google-plus"><i class="fa fa-google"></i></span>google +</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
